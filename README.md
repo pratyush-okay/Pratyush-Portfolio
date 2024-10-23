@@ -1,7 +1,6 @@
 # Pratyush Panda - Portfolio and Resume
 
 ## Contact Information:
-- **Phone:** +63 043 493 6692
 - **Email:** [p.pratyush@outlook.com](mailto:p.pratyush@outlook.com)
 - **LinkedIn:** [linkedin.com/in/pratyush](https://linkedin.com/in/pratyush)
 - **GitHub:** [github.com/pratyush](https://github.com/pratyush)

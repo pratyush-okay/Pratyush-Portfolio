@@ -78,9 +78,9 @@ export const Navigation = ({
         </Link>
       ))}
 
-      <Heading as="p" className="text-sm md:text-sm lg:text-sm pt-10 px-2">
-        Socials
-      </Heading>
+<p className="text-sm md:text-sm lg:text-sm pt-10 px-2">
+  Socials
+</p>
       {socials.map((link: Navlink) => (
         <Link
           key={link.href}

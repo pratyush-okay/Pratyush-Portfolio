@@ -14,6 +14,7 @@ type Props = {
   params: { slug: string };
 };
 
+// Generate Metadata with correct params usage
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = params;
   const product = products.find((p) => p.slug === slug) as Product | undefined;
@@ -26,22 +27,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
       title: "Projects | Pratyush Panda",
       description:
-        "A web developer exploring the realms of AI, fueled by newfound passion and curiosity. I think outside the box and face challenges with enthusiasm and determination. ",
+        "A web developer exploring the realms of AI, fueled by newfound passion and curiosity. I think outside the box and face challenges with enthusiasm and determination.",
     };
   }
 }
 
-export default function SingleProjectPage({
+// Fix the dynamic route type by ensuring params is awaited properly
+export default async function SingleProjectPage({
   params,
-}: {
-  params: { slug: string };
-}) {
+}: Props) {
   const { slug } = params;
   const product = products.find((p) => p.slug === slug);
 
   if (!product) {
     redirect("/projects");
   }
+
   return (
     <Container>
       <SingleProduct product={product} />

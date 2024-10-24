@@ -106,7 +106,7 @@ const SidebarHeader = () => {
   return (
     <div className="items-center space-x-2 space-y-2"> {/* Adjusted to 'flex' and added spacing */}
       <Image
-        src="/images/projects/R0002734 3.JPG"
+        src="/images/projects/avatar.JPG"
         alt="Avatar"
         height="100"
         width="100"

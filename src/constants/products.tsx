@@ -1,11 +1,3 @@
-
-import sidefolioAlgochurn from "../../public/images/sidefolio-algochurn.png";
-import sidefolioAlgochurn2 from "../../public/images/sidefolio-algochurn.png";
-import sidefolioMoonbeam from "../../public/images/sidefolio-moonbeam.png";
-import sidefolioMoonbeam2 from "../../public/images/sidefolio-moonbeam-2.png";
-import sidefolioTailwindMasterKit from "../../public/images/sidefolio-tailwindmasterkit.png";
-import sidefolioTailwindMasterKit2 from "../../public/images/sidefolio-tailwindmasterkit-2.png";
-
 import capstoneMain from "../../public/images/projects/capstone/React App · 5.43am · 04-02 (1).jpeg"
 import capstone2 from "../../public/images/projects/capstone/Screenshot 2024-10-24 at 1.03.42 am.png"
 import capstone3 from "../../public/images/projects/capstone/React App · 4.28pm · 04-08 (1).jpeg"

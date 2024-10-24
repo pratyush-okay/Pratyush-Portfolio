@@ -1,42 +1,40 @@
 import { Container } from "@/components/Container";
-import { Heading } from "@/components/Heading";
-import { Highlight } from "@/components/Highlight";
-import { Paragraph } from "@/components/Paragraph";
 import { SingleProduct } from "@/components/Product";
-import { Products } from "@/components/Products";
 import { products } from "@/constants/products";
 import { Product } from "@/types/products";
-import { Metadata } from "next";
-import Image from "next/image";
+import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 
-type Props = {
-  params: { slug: string };
-};
+interface PageProps {
+  params: Promise<{
+    slug: string;
+  }>;
+}
 
-// Generate Metadata with correct params usage
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = params;
-  const product = products.find((p) => p.slug === slug) as Product | undefined;
+export async function generateMetadata({ 
+  params 
+}: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const product = products.find((p) => p.slug === slug);
+  
   if (product) {
     return {
       title: product.title,
       description: product.description,
     };
-  } else {
-    return {
-      title: "Projects | Pratyush Panda",
-      description:
-        "A web developer exploring the realms of AI, fueled by newfound passion and curiosity. I think outside the box and face challenges with enthusiasm and determination.",
-    };
   }
+  
+  return {
+    title: "Projects | Pratyush Panda",
+    description:
+      "A web developer exploring the realms of AI, fueled by newfound passion and curiosity. I think outside the box and face challenges with enthusiasm and determination. ",
+  };
 }
 
-// Fix the dynamic route type by ensuring params is awaited properly
 export default async function SingleProjectPage({
   params,
-}: Props) {
-  const { slug } = params;
+}: PageProps) {
+  const { slug } = await params;
   const product = products.find((p) => p.slug === slug);
 
   if (!product) {

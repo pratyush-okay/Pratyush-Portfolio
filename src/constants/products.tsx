@@ -1,3 +1,7 @@
+import selecktedMain from "../../public/images/projects/seleckted/Screenshot 2025-04-17 at 12.21.19 pm.png"  
+import seleckted1 from "../../public/images/projects/seleckted/Screenshot 2025-04-17 at 12.21.38 pm.png"
+import seleckted2 from "../../public/images/projects/seleckted/Screenshot 2025-04-17 at 12.22.02 pm.png"
+import seleckted3 from "../../public/images/projects/seleckted/Screenshot 2025-04-17 at 12.22.12 pm.png"
 import capstoneMain from "../../public/images/projects/capstone/React App · 5.43am · 04-02 (1).jpeg"
 import capstone2 from "../../public/images/projects/capstone/Screenshot 2024-10-24 at 1.03.42 am.png"
 import capstone3 from "../../public/images/projects/capstone/React App · 4.28pm · 04-08 (1).jpeg"
@@ -13,6 +17,42 @@ import dcssMain from "../../public/images/projects/dcss/Dashboard (1).png"
 import dcss2 from "../../public/images/projects/dcss/Knife Detection.png"
 import dcss3 from "../../public/images/projects/dcss/Distributed Surveillance System.png"
 export const products = [
+  {
+    href: "https://www.seleckted.com/",
+    title: "Seleckted - Smart Rejection & Resume Review Tool for Recruiters",
+    description:
+      "Seleckted (Stage 1 MVP) is a lightweight recruiter-facing AI platform built to automate resume screening and generate personalized rejection feedback using Agentic RAG workflows.",
+    thumbnail: selecktedMain, // Replace with your main thumbnail image
+    images: [seleckted1, selecktedMain, seleckted2], // Replace with your actual image imports
+    stack: ["Next.js", "FastAPI", "Tailwind", "ShadCN", "LangChain", "OpenAI"],
+    slug: "seleckted",
+    content: (
+      <div>
+        <p>
+          <strong>Seleckted (Stage 1 MVP)</strong> is a recruiter-facing platform built to streamline resume evaluation and improve applicant communication through AI-generated, personalized rejection feedback. It leverages LLM-powered RAG workflows to analyze resumes against job descriptions and selected candidates, helping recruiters save time while offering transparency to applicants.
+        </p>
+        <p>
+          <strong>Core Features:</strong>
+          <ul className="list-disc list-inside">
+            <li>Create detailed job posts with roles, responsibilities, and key qualifications.</li>
+            <li>Upload 10–15 resumes per job, with parsed highlights showing match insights per candidate.</li>
+            <li>Shortlist candidates for next-stage consideration.</li>
+            <li>Automatically generate rejection reasons based on RAG (job + selected candidate comparison).</li>
+            <li>Select from pre-written rejection templates or write custom messages for AI to refine.</li>
+          </ul>
+        </p>
+        <p>
+          <strong>Why It Matters:</strong> Recruiters often lack the time to write meaningful rejections, leaving applicants in the dark. Seleckted bridges that gap by offering AI-powered, time-saving communication tools while improving candidate experience through clarity.
+        </p>
+        <p>
+          <strong>Tech Highlights:</strong> Built using Next.js with Tailwind and ShadCN on the frontend, and FastAPI for the backend. Resume data is parsed and processed using LangChain with OpenAI integration. Authentication and file storage are currently local, with plans to scale to Firebase and AWS S3. Hosted on Vercel for rapid iteration and deployment.
+        </p>
+        <p>
+          This Stage 1 MVP focuses on key recruiter tasks while showcasing the power of LLMs and RAG for workflow automation in hiring pipelines.
+        </p>
+      </div>
+    ),
+  },
   {
     href: "https://github.com/pratyush-okay/Easy-Parking",
     title: "Easy Parking",

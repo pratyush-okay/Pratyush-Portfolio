@@ -2,6 +2,7 @@ import {
   IconArticle,
   IconBolt,
   IconBriefcase2,
+  IconCertificate,
   IconMail,
   IconMessage2,
 } from "@tabler/icons-react";

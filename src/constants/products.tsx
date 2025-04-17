@@ -1,4 +1,4 @@
-import selecktedMain from "../../public/images/projects/seleckted/Thumbnail.png"  
+import selecktedMain from "../../public/images/projects/seleckted/thumbnail.png"  
 import seleckted1 from "../../public/images/projects/seleckted/1.png"
 import seleckted2 from "../../public/images/projects/seleckted/2.png"
 import capstoneMain from "../../public/images/projects/capstone/React App · 5.43am · 04-02 (1).jpeg"
